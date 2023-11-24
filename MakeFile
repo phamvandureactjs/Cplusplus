@@ -1,0 +1,14 @@
+PATH_MAIN := ./Main/
+PATH_INCLUDE_NODE := ./Include/Node/
+PATH_INCLUDE_PEOPLE := ./Include/People/
+PATH_INCLUDE_STAFF := ./Include/Staff/
+PATH_INCLUDE_STUDENT := ./Include/Student/
+PATH_INCLUDE_TEACHER := ./Include/Teacher/
+
+
+.PHONY := clean all
+all:
+	g++ $(PATH_INCLUDE_PEOPLE)people.cpp $(PATH_INCLUDE_STAFF)staff.cpp $(PATH_INCLUDE_STUDENT)student.cpp $(PATH_INCLUDE_TEACHER)teacher.cpp $(PATH_INCLUDE_NODE)node.cpp $(PATH_MAIN)main.cpp -o main
+
+clean:
+	del *.exe
