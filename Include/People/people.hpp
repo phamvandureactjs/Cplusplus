@@ -4,23 +4,24 @@
 #include <iostream>
 using namespace std;
 
-class People{
-protected:
-    struct Date{
+struct Date{
         unsigned int day;
         unsigned int month;
         unsigned int year;
-    };
+};
+
+typedef enum _TypePeople{
+        STUDENT,
+        STAFF,
+        TEACHER
+    } TypePeople;
+class People{
+protected:
     char *name;
     struct Date birthday;
     int ID;
     static int member;
 public:
-    typedef enum _TypePeople{
-        STUDENT,
-        STAFF,
-        TEACHER
-    } TypePeople;
     TypePeople tp;
     People();
     virtual void printInfo(){

@@ -26,8 +26,8 @@ int People::getId(){
 void People::setID(int _ID){
     ID = _ID;
 }
-static int getPeople(){
-    return member;
+int People::getPeople(){
+    return People::member;
 }
 void People::setType(TypePeople _type){
     tp = _type;

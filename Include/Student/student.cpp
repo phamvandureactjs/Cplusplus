@@ -5,7 +5,7 @@
 using namespace std;
 
 Student::Student(){
-    setType(People::TypePeople::STUDENT);
+    setType(TypePeople::STUDENT);
 }
 void Student::printInfo(){
     People::printInfo();

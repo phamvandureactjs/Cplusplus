@@ -1,0 +1,59 @@
+{
+    "members":
+    {
+      "staff" : [
+        {
+          "teacher" :[
+            {
+              "name":"Thu",
+              "birthday":"20-11-1987",
+              "ID code": 33457,
+              "Department":"Social",
+              "Joined Date":"20-11-2022",
+              "Level":1,
+              "Main Subject": "Math"
+            },
+            {
+              "name":"Thu",
+              "birthday":"20-11-2001",
+              "ID code": 33457,
+              "Department":"Social",
+              "Joined Date":"20-11-2022",
+              "Level":1,
+              "Main Subject": "Literature"
+            }
+          ]
+        },
+        {
+          "other": [
+            {
+              "name":"Du",
+              "birthday":"20-11-1985",
+              "ID code": 23456,
+              "Department":"security",
+              "Joined Date":"20-11-2021",
+              "Level":3
+            }
+          ]
+        }
+      ],
+      "student": [
+        {
+          "name":"Hung",
+          "birthday":"20-11-1995",
+          "ID code": 12345,
+          "Grade":11,
+          "Number":3,
+          "Score":[8.0, 9.5, 8.8]
+        },
+        {
+          "name":"Binh",
+          "birthday":"02-08-2001",
+          "ID code": 12345,
+          "Grade":11,
+          "Number":3,
+          "Score":[10, 10, 10]
+        }
+      ]
+    }
+  }

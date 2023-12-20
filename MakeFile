@@ -4,11 +4,13 @@ PATH_INCLUDE_PEOPLE := ./Include/People/
 PATH_INCLUDE_STAFF := ./Include/Staff/
 PATH_INCLUDE_STUDENT := ./Include/Student/
 PATH_INCLUDE_TEACHER := ./Include/Teacher/
+PATH_INCLUDE_JSON := ./Include/JSON/
 
 
 .PHONY := clean all
 all:
-	g++ $(PATH_INCLUDE_PEOPLE)people.cpp $(PATH_INCLUDE_STAFF)staff.cpp $(PATH_INCLUDE_STUDENT)student.cpp $(PATH_INCLUDE_TEACHER)teacher.cpp $(PATH_INCLUDE_NODE)node.cpp $(PATH_MAIN)main.cpp -o main
-
+	echo "start compile"
+	@g++ $(PATH_INCLUDE_JSON)handleJson.cpp $(PATH_INCLUDE_PEOPLE)people.cpp $(PATH_INCLUDE_STAFF)staff.cpp $(PATH_INCLUDE_STUDENT)student.cpp $(PATH_INCLUDE_TEACHER)teacher.cpp $(PATH_INCLUDE_NODE)node.cpp -IC:\\json\\json-develop\\include $(PATH_MAIN)main.cpp -o main
+	@./main
 clean:
 	del *.exe

@@ -2,14 +2,14 @@
 #define _TEACHER_H_
 
 #include "../Staff/staff.hpp"
-class Teacher : public Staff{
-    private:
-        int Class;
-        enum Subject{
+enum Subject{
             MATHS,
             PHYS,
             ENGLISH
         };
+class Teacher : public Staff{
+    private:
+        int Class;
         Subject mainSubject;
     public:
         Teacher() ;

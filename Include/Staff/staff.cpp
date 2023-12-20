@@ -5,7 +5,7 @@
 using namespace std;
 
 Staff::Staff(){
-    setType(People::TypePeople::STAFF);
+    setType(TypePeople::STAFF);
 }
 // void Staff::writeToFile(const char *fileName){
 //     ofstream outfile;
